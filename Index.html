@@ -1,9 +1,18 @@
+---
+layout: null
+seo_title: "Studio Textra | Menselijke flair. Mechanische precisie."
+seo_description: "Studio Textra combineert creatieve copywriting met AI-precisie voor copy, AI-implementatie en GEO optimalisatie."
+hero_line1: "Menselijke flair."
+hero_line2: "Mechanische precisie."
+hero_intro: "Wij combineren creatieve copywriting met de brute rekenkracht van AI. Voor teksten die niet alleen lekker lezen, maar ook gevonden worden door de zoekmachines van morgen."
+---
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Textra | Menselijke flair. Mechanische precisie.</title>
+    <<title>{{ seo_title }}</title>
+    <meta name="description" content="{{ seo_description }}">
     <!-- We gebruiken Tailwind CSS voor moderne styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter voor strakke leesbaarheid, Roboto Mono voor tech accenten -->
@@ -44,13 +53,12 @@
                 <span class="font-mono text-xs text-blue-300 uppercase tracking-widest">Next-Gen Copywriting</span>
             </div>
             <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight">
-                Menselijke flair.<br>
-                <span class="gradient-text">Mechanische precisie.</span>
-            </h1>
-            <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Wij combineren creatieve copywriting met de brute rekenkracht van AI. 
-                Voor teksten die niet alleen lekker lezen, maar ook gevonden worden door de zoekmachines van morgen.
-            </p>
+    {{ hero_line1 }}<br>
+    <span class="gradient-text">{{ hero_line2 }}</span>
+        </h1>
+    <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+    {{ hero_intro }}
+        </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#diensten" class="px-8 py-4 bg-white text-slate-900 font-bold rounded hover:bg-slate-200 transition">
                     Bekijk onze diensten
@@ -168,4 +176,5 @@
     </footer>
 
 </body>
+
 </html>
